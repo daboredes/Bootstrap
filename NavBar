@@ -1,0 +1,66 @@
+https://getbootstrap.com/docs/5.1/components/navbar/
+El div, nav, ul y li deben tener la clase que indica la documentaicion
+
+navbar-expand-xl es el atribute que hace que los li de la ul queden al lado del otro, xl puede cambiar por sm, md y xll
+
+bg-light cambia el color de fondo
+https://getbootstrap.com/docs/5.1/components/navbar/#color-schemes aca hay mas ejemplos
+funcionan los colores de los buttons tambien https://getbootstrap.com/docs/5.1/components/buttons/
+
+navbar-dark cambia el color del texto.
+https://getbootstrap.com/docs/5.1/components/navbar/#text-1 aca hay mas ejemplos
+
+Brand: para ponerlo, lo mejor es usar un anchor tag con el href vacio.
+<a class="navbar-brand" href="#">Navbar</a>
+https://getbootstrap.com/docs/5.1/components/navbar/#brand
+ 
+El codigo seria este:
+<nav class='navbar navbar-expand-md bg-dark navbar-dark'>
+    <a class='navbar-brand' href=''>tindog</a>
+    <ul class='navbar-nav'>
+        <li class='nav-item'>
+            <a class='nav-link' href=''> Contact </a>
+        </li>
+        <li class='nav-item'>
+            <a class='nav-link' href=''> Pricing </a>
+        </li>
+        <li class='nav-item'>
+            <a class='nav-link' href=''> Download </a>
+        </li>
+    </ul>
+</nav>
+
+Pero sucede que los li quedan al lado del brand. Si queres que aparezcan a la derecha de la pagina y que al redimensionar se vuelva un toggler (menu desplegable)
+primero al ul se le agrega el atribute ml-auto (para que en bootstrap 5.0 es ms-auto)
+Luego se hace un div que envuelva lo que queres que se transforme en toggler al redimensionar
+La doc del toggler esta aca:
+https://getbootstrap.com/docs/5.1/components/navbar/#toggler
+El tema es que en bootstrap 4 es un poco distinto: 
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    Hay que sacar -bs- de data target y de data toggle para que funcione
+   El button va por fuera del div, y dependiendo de donde lo quieras, antes o despues del brand.
+   Como siempre, el id debe coincidir con el target
+   
+   Al final debe quedar asi:
+   <nav class='navbar navbar-expand-md bg-dark navbar-dark'>
+    <a class='navbar-brand' href=''>tindog</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <ul class='navbar-nav ml-auto'>
+            <li class='nav-item'>
+                <a class='nav-link' href=''> Contact </a>
+            </li>
+            <li class='nav-item'>
+                <a class='nav-link' href=''> Pricing </a>
+            </li>
+            <li class='nav-item'>
+                <a class='nav-link' href=''> Download </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+   
