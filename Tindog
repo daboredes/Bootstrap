@@ -28,3 +28,15 @@ Hago un container-fluid que envuelva el nav, hasta despues de la imagen, y luego
 }
 
 Recordar el atajo, el primer valor es arriba y abajo, el segundo izquierda y derecha.
+
+Los botones: se agrega la clase, y para el caso del style light se agrega la clase btn-lg para hacer mas grande
+<button type="button" class="btn btn-secondary btn-lg">Download</button>
+<button type="button" class="btn btn-outline-light btn-lg">Download</button>
+
+Para los iconos que llevan los botones: https://fontawesome.com/v6.0
+Al igual que bootstrap, hay que usar el cdn de fontawesome a nuestra web, puede ser abajo de nuestro style.css
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+Luego de elegido el icono, copiamos el <i que tienen, y lo pegamos. Funciona igual que bootstrap, con clases.
+<button type="button" class="btn btn-secondary btn-lg"><i class="fab fa-apple"></i> Download</button> notese el espacio entre el </i> y el download.
+<button type="button" class="btn btn-outline-light btn-lg"><i class="fab fa-google-play"></i> Download</button>
+Usan <i> porque los iconos no se inclinan y porque es un tag corto. Pero se puede cambiar por <span>
