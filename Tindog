@@ -1,0 +1,23 @@
+Para el navbar, sacamos el class que le dar color 'bg-dark', para que quede el fondo del mismo color que la primer seccion
+
+Para el background de la primer seccion, use la pagina https://cssgradient.io/ para elegir el gradient, y se los puse al id title que es la primer seccion
+
+Para separar el primer texto y la imagen, usamos el layout de bootstrap: 
+        <div class='row'>
+            <div class="col-lg-6">
+                <h1>Meet new and interesting dogs nearby.</h1>           
+                <button type="button">Download</button>
+                <button type="button">Download</button>
+            </div>
+            <div class='col-lg-6'>
+                <img id="phone" src="images/iphone6.png" alt="phone">
+            </div>
+        </div>
+
+Para cambiar el estilo del h1:
+h1 {
+  size: 3rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900; /*para darle grosor*
+  line-height: 1.5;/*no se especifica unidad*/
+}
