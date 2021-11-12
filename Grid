@@ -1,1 +1,71 @@
+Bootstrap hace que hacer una web responsive sea facil.
+class="col" va a divir la fila en partes iguales, para que entren todas las columnas en la totalidad de la pantalla.
+si tengo 2 columnas, divide en 50%, si tengo 4 en 25%
+<div class='row'>
+    <div class='col' style='background-color: red; border: 1px solid'>
+        col
+    </div>
+    <div class='col' style='background-color: red; border: 1px solid'>
+        col
+    </div>
+</div>
 
+La pantalla se divide en 12, por lo que se puede usar la clase <div class='col-x'> y definir cuanta pantalla queremos que ocupe la columna
+<div class='row'>
+    <div class='col-6' style='background-color: green; border: 1px solid'>
+        col-6
+    </div>
+    <div class='col-3' style='background-color: green; border: 1px solid'>
+        col-3
+    </div>
+    <div class='col-2' style='background-color: green; border: 1px solid'>
+        col-2
+    </div>
+    <div class='col-1' style='background-color: green; border: 1px solid'>
+        col-1
+    </div>
+</div>
+
+Para hacer las columnas responsive se usa el <div class="col-md-X> siendo x un numero entre 1 y 12.
+lg seria desktop, md seria laptop sm seria talbet y col-x seria phone
+Si dejas el <div class="col-md-6>, se hacen 2 columan y 2 filas, porque 6*4=24, recordas que el class divide la pantalla en 12.
+
+Ejemplo, en full size tener 4 columnas, en tablet 3 y en phone 2:
+<div class='row'>
+    <div class='col-lg-3 col-md-3 col-sm-4 col-6' style='background-color: yellow; border: 1px solid'>
+        responsive col 1
+    </div>
+    <div class='col-lg-3 col-md-3 col-sm-4 col-6' style='background-color: yellow; border: 1px solid'>
+        responsive col 2
+    </div>
+    <div class='col-lg-3 col-md-3 col-sm-4 col-6' style='background-color: yellow; border: 1px solid'>
+        responsive col 3
+    </div>
+    <div class='col-lg-3 col-md-3 col-sm-4 col-6' style='background-color: yellow; border: 1px solid'>
+        responsive col 4
+    </div>
+</div>
+La idea es definir en el class como se comporta para cada size.
+
+Challenge: 6 columnas en desktop y laptop, 4 en tablet y 1 en phone:
+<div class='row'>
+    <div class='col-lg-2 col-md-2 col-sm-3 col-' style='background-color: grey; border: 1px solid'>
+        responsive col 1
+    </div>
+    <div class='col-lg-2 col-md-2 col-sm-3 col-' style='background-color: grey; border: 1px solid'>
+        responsive col 1
+    </div>
+    <div class='col-lg-2 col-md-2 col-sm-3 col-' style='background-color: grey; border: 1px solid'>
+        responsive col 1
+    </div>
+    <div class='col-lg-2 col-md-2 col-sm-3 col-' style='background-color: grey; border: 1px solid'>
+        responsive col 1
+    </div>
+    <div class='col-lg-2 col-md-2 col-sm-3 col-' style='background-color: grey; border: 1px solid'>
+        responsive col 1
+    </div>
+    <div class='col-lg-2 col-md-2 col-sm-3 col-' style='background-color: grey; border: 1px solid'>
+        responsive col 1
+    </div>
+</div>
+POr default las columnas ocupan todo el espacio, entonces se puede dejar borrar el col-
