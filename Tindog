@@ -21,3 +21,10 @@ h1 {
   font-weight: 900; /*para darle grosor*
   line-height: 1.5;/*no se especifica unidad*/
 }
+
+Hago un container-fluid que envuelva el nav, hasta despues de la imagen, y luego modifico el css:
+.container-fluid {
+  padding: 3% 15%;
+}
+
+Recordar el atajo, el primer valor es arriba y abajo, el segundo izquierda y derecha.
