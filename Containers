@@ -1,0 +1,20 @@
+Los containers son el layour mas basico de bootstrap, es una clase.
+
+Se usa para darle padding y centrar facilmente un div. Es responsive por si mismo.
+
+<div class='container' style='background-color: red'>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus ipsa iusto aliquid dolor rem ipsam veniam sit est, 
+    dolore culpa, asperiores beatae odio aliquam, eum perspiciatis maiores reiciendis magnam atque.lore Lorem ipsum dolor sit, 
+    amet consectetur adipisic
+</div>
+
+Va cambiando de forma de manera brusca, por eso esta el otro tipo de container que es container-fluid:
+<div class='container-fluid' style='background-color: gray'>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus ipsa iusto aliquid dolor rem ipsam veniam sit est, 
+    dolore culpa, asperiores beatae odio aliquam, eum perspiciatis maiores reiciendis magnam atque.lore Lorem ipsum dolor sit, 
+    amet consectetur adipisic
+</div>
+
+Tambien es responsive y centra, pero siempre usa el 100% del width. Es el tipo que se usa, pero por lo general se modifica el padding.
+
+Recordar que el codigo toma el css ultimo, es decir, el link de mi css deberia estar despues del link de bootstrap.
