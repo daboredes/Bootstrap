@@ -1,0 +1,5 @@
+Para ver la class button: https://getbootstrap.com/docs/5.1/components/buttons/
+
+Se puede combinar el estilo con el tamanio, por ejemplo:
+<button type="button" class="btn btn-outline-light btn-lg">Download</button>
+el style light no trae btn-lg que es el tamanio.
