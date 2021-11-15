@@ -1,1 +1,30 @@
 El Carrousel es el slider, por donde pasan las tarjetas.
+Uno de los <div class="carousel-item active"> debe estar seteado como active, los demas no <div class="carousel-item>
+data-interval="" expresado en milisegundos (5000ms~5segs por default) para la velocidad de cambio
+data-pause='hover' para el carousel al pasar el mouse.
+aria-hiden='true' oculta el texto cuando se usa el lector para personas de baja vision.
+
+<div id="testimonial-carousel" class=" container-fluid carousel slide" data-ride="carousel" data-interval= '3000'>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <h2>I no longer have to sniff others dogs for love. I've found the hottest Corgi on TinDog. Woof.</h2>
+                <img class="testimonial-image" src="images/dog-img.jpg" alt="dog">
+                <em>Pebbles, New York</em>
+              </div>
+              <div class="carousel-item">
+                <h2 class="testimonial-text">My dog used to be so lonely, but with TinDog's help, they've found the love of their life. I think.</h2>
+                <img class="testimonial-image" src="images/lady-img.jpg" alt="lady-profile">
+                <em>Beverly, Illinois</em>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#testimonial-carousel" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#testimonial-carousel" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+        </div>
+        
+        Como las flechas quedaron muy cerca del texto, el padding se saca del testimonial, y solo se aplica a los carousel item
