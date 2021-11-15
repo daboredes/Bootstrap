@@ -1,0 +1,16 @@
+https://getbootstrap.com/docs/4.0/examples/pricing/
+https://bootsnipp.com/ para ver ejemplos
+Inspecteamos y sacamos el codigo del card-deck
+Ojo que con bootstrap 5 es card-group
+Estructura estandar:
+<div class='card-group'>
+  <div class='card'>
+      <div class='card-header'> </div>
+      <div class='card-body'> </div>
+      <div class='card-footer'> </div>
+  </div>
+</div>
+En bootstrap 5 no funcion el deck group, entonces se tiene que usar el grid:
+ver el archivo de css de tindog.
+class='card text-xx' es para alinear el texto dentro del card.
+Para hacer el boton del largo de la card, se pone la class='col-12'.
