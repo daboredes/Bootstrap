@@ -40,3 +40,24 @@ Luego de elegido el icono, copiamos el <i que tienen, y lo pegamos. Funciona igu
 <button type="button" class="btn btn-secondary btn-lg"><i class="fab fa-apple"></i> Download</button> notese el espacio entre el </i> y el download.
 <button type="button" class="btn btn-outline-light btn-lg"><i class="fab fa-google-play"></i> Download</button>
 Usan <i> porque los iconos no se inclinan y porque es un tag corto. Pero se puede cambiar por <span>
+
+Sobre las fuentes que usamos en la pagina:
+definimos la fuente en el body:
+
+body {
+  font-family: "Montserrat";
+}
+
+Para el color del h1, lo puedo definir en el h1, o en el container id title, por si luego agrego mas texto, quede del mismo color
+
+Para los styles del navbar:
+
+/* Para dejar mas espacio entre el navbar y el h1 y la imagen */
+.navbar {
+  padding-bottom: 4.5rem;
+}
+.navbar-brand {
+  font-family: "Ubuntu";
+  font-size: 2.5rem;
+  font-weight: bold;
+}
