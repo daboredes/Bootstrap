@@ -16,7 +16,7 @@ Para separar el primer texto y la imagen, usamos el layout de bootstrap:
 
 Para cambiar el estilo del h1:
 h1 {
-  size: 3rem;
+  font-size: 3.5rem; /*para que se destaque del navbar*/
   font-family: "Montserrat", sans-serif;
   font-weight: 900; /*para darle grosor*
   line-height: 1.5;/*no se especifica unidad*/
@@ -54,10 +54,65 @@ Para los styles del navbar:
 
 /* Para dejar mas espacio entre el navbar y el h1 y la imagen */
 .navbar {
-  padding-bottom: 4.5rem;
+  padding: 0 0 4.5rem;/*no es lo mismo que definir padding-bottom.*/
 }
 .navbar-brand {
   font-family: "Ubuntu";
   font-size: 2.5rem;
   font-weight: bold;
 }
+/* Para espaciar los elementos del navbar */
+.nav-item {
+  padding: 0 18px;
+}/*como ya son responsive, no es necesario especificar rem, con px esta bien.*/
+.nav-link {
+  font-family: "Ubuntu";
+  font-weight: 100;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+Para los buttons: por lo general es mejor crear un class personalizado, que usar el btn de Bootstrap. En este caso, creamos una nueva class: download-button
+.download-button {
+  margin: 5% 3% 5% 0;
+}
+
+/*title image*/
+La queremos mas chica, entonces uso la propiedad width.
+#phone {
+  width: 60%; /*la hace 40% mas chica que la original */
+  transform: rotate(25deg);
+  margin-left: 75px;
+}
+
+Para la parte de features, es un challenge.
+
+Primero creo un container-fluid para centrar facilmente
+Luego el div class='row', luego cada features es una columna
+Al container-fluid se le puede dar la propiedad text-align center para centrar los iconos y el texto h3 y p.
+Se le agrega padding para espaciar
+.container-fluid {
+  padding: 7.5% 15%;
+  text-align: center; /*Esto arregla que los iconos se centren, ademas del h3 y el p*/
+}
+.fas {
+  color: #ef8172;
+  font-size: 5rem;
+  padding: auto 0;
+}
+.fas:hover {
+  color: #ff4c68;
+}
+.feature-h3 {
+  margin: 8px 0;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1;
+  /* text-align: center; */
+}
+.feature-p {
+  color: #8f8f8f;
+  /* text-align: center; */
+}
+Los iconos de font awesome tiene una clase que les permite ser redimensionados: se les agrega fa-Xx y listo, en este caso fue 4x.
