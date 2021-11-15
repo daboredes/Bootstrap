@@ -1,0 +1,9 @@
+position: absoulute, saca del flujo de html a los elementos dentro del parent.
+lo primero escrito en html aparece al fondo, y lo ultimo adelante.
+Hay otra forma de cambiar el orden de stacke (en que orden aparecen): Z-index
+el atributo z-index:1 en un selector lo manda al frente y z-index: -1 lo manda al fondo
+z-index solo funciona si los elementos estan posicionados (absolute, relative, etc)
+
+Para 'cortar' la foto del celular, lo primero es cambiar el color de fondo del div de features, porque son transparentes, no blancos.
+Luego definimos el z-index:-1 de la photo y definimos el position:absolute a la imagen tambien.
+Despues definimos el z-index:1 de #features y definimos el position:absolute
