@@ -1,0 +1,48 @@
+Para que el sitio se mantenga igual de responsivo en las diferentes resoluciones,
+La idea es hacer los sitios responsive con css nativo, y no con frameworks.
+En codeply sacamos el framework.
+
+Media:
+La idea es usar condicionales, que aplican formato si cumplen la condicion.
+
+<h1>Hello world</h1>
+h1{
+    color: red;
+}
+Hace que el h1 sea rojo.
+
+<h1>Hello world</h1>
+@media print{
+    h1{
+    color: red;
+}
+}
+Hace que si se va a imprimir, el h1 sea rojo.
+
+@media (min-width: 900px){
+    h1{
+        color: red;
+    }
+}
+Si el tamanio de la pantalla es como minimo 900px, el h1 es rojo, si es menor, entonces css no aplica.
+
+@media (max-width: 900px){
+    h1{
+        color: red;
+    }
+}
+Hasta 900px maximo de tamanio de pantalla, el h1 es rojo, si es mayor, entonces css no aplica.
+
+Se pueden combinar condicionales con and: 
+h1{
+    font-size: 30px;
+}
+@media (min-width: 900px) and (max-width: 1000px){
+    h1{
+        color: red;
+        font-size: 60px;
+    }
+}
+Es super importante el orden, primero min y luego max.
+
+El viewport es el tamanio de la pantalla donde se esta viendo la web
