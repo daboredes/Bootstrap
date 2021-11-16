@@ -131,3 +131,8 @@ Para cambiar la posicion de la foto cuando cambie el tamanio del viewport, usamo
   }
 }
 
+Combine selectors:
+El padding del title queda muy grande, pero si seteas uno con el id, se le agrega al del class y queda mas grande aun.
+Para seleccionar un class dentro de un id:
+#title .container-fluid{
+}
