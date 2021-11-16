@@ -116,3 +116,18 @@ Se le agrega padding para espaciar
   /* text-align: center; */
 }
 Los iconos de font awesome tiene una clase que les permite ser redimensionados: se les agrega fa-Xx y listo, en este caso fue 4x.
+
+Para que la imagen del celular quede por detras de la segunda seccion:
+Primero, creamos una class para el div que contiene la imagen, y le seteamos la position relative, para que la imagen pueda tener position absolute.
+Seteamos la imagen con position absoulute, y z-index: 0 para mandarlo atras del segundo div, que le damos un z-indez:1 para que sea mas grande y este adelante.
+La imagen no puede tener z-indez:-1 porque se va atras de su propio contenedor.
+Si estan posicionados, y uno tiene z-index, entonces 
+
+Para cambiar la posicion de la foto cuando cambie el tamanio del viewport, usamos media query: 
+@media (max-width: 975px) {
+  #phone {
+    position: static;
+    transform: rotate(0deg);
+  }
+}
+
