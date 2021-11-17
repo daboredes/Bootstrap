@@ -1,0 +1,30 @@
+Para combinar y elegir de forma mas especifica los selectores, hay varias formas:
+
+selector1, selector2, selectorX{
+}
+
+Se complica cuando hay jerarquia, primero se pone el parent, luego el child.
+
+id>class:
+#id .class{
+}
+
+div h1{
+}
+Todos los h1 que esten contenidos en un div van a tener el estilo definido, que puede ser distinto al definido solo para h1.
+
+.container-fluid h1{
+}
+Los h1 dentro de los container fluid van a tener el estilo definido.
+
+La jerarquia se lee de derecha a izquierda!. Y solo funciona con parent childs.
+
+Combined Selectors:
+selector1.selector2{
+}
+o
+selector1#selector2{
+}
+En este caso se lee de izquierda a derecha! y es para los elementos que tengan selector1 y selector 2
+por ejemplo: h1 class='selector1 selector2'
+Tambien para el elemento que tenga la clase elegida: h1.selector1{}
